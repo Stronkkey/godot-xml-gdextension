@@ -3,7 +3,6 @@
 #include "xml_document.hpp"
 #include "xml_node.hpp"
 #include "xml.hpp"
-#include "trail_component.hpp"
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/defs.hpp>
@@ -20,7 +19,6 @@ void initialize_module(ModuleInitializationLevel p_level) {
     ClassDB::register_class<XMLReader>();
     ClassDB::register_class<XMLDocument>();
     ClassDB::register_class<XMLNode>();
-    ClassDB::register_class<TrailComponent>();
 }
 
 void uninitialize_module(ModuleInitializationLevel p_level) {
